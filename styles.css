@@ -1,0 +1,358 @@
+.disclaimer {
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* MOBILE BUTTON */
+.mobile-button{
+    display: none;
+}
+/* TOP NAV */
+#top-nav {
+    background-color: rgb(0, 122, 255)!important;
+}
+.top-nav h1{
+    font-weight: 600;
+    font-size: 25px;
+    color:  white;
+    margin: 0px;
+    padding: 3px 15px 3px 15px;
+}
+a.nav-link{
+    margin-left: 20px;
+    color: white!important;
+}
+a.nav-link:hover {
+    color: lightgray!important;
+}
+
+/* Cover  */
+.cover {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.cover #txt-area{
+    margin-top: 45px;
+}
+.cover h1 {
+    font-size: 50px
+
+}
+#coverImg{
+    width: 100%;
+    max-width: 500px;
+    display:block;
+    margin:auto;
+}
+.cover a {
+    background-color: rgb(0, 122, 255);
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+.cover a:hover {
+    background-color: white !important;
+    border: 2px solid rgb(0, 122, 255);
+    color: rgb(0, 122, 255) !important;
+}
+
+
+#resume {
+    background-color: rgb(181, 214, 250);
+    color: rgb(0, 122, 255)!important;
+}
+.contactme-button {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(0, 122, 255);
+    color: white !important;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.contactme-button a{
+    text-decoration: none;
+    color: white;
+}
+.mobile-button {
+    display: none;
+    height: 80px;
+    width: 80px;
+    line-height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(0, 122, 255);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 0px rgba(19, 23, 61, 0.4);
+}
+
+.profile {
+    width: 95%;
+    margin: auto;
+    padding: 25px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: rgb(95, 93, 93);
+}
+.profile h1 {
+    font-weight: 600;
+}
+
+
+.two-columns {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+
+
+.codingSkills img {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+}
+.education img {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+}
+.workExperience img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+
+.title {
+    width: 95%;
+    margin: 30px auto auto 30px;
+    color: gray;
+    text-align: left;
+}
+.title h1 {
+    font-size: 25px;
+}
+
+.languages {
+    margin: 30px auto 20px auto;
+    width:  94%;
+}
+.languages h1 {
+    font-weight: 600;
+    text-align: center;
+    color: rgb(95, 93, 93);
+    margin-top: 30px;
+}
+.languages .col {
+    text-align: center;
+    margin: 5px;
+    background-color: aliceblue;
+    font-size: 20px;
+    color: rgb(95, 93, 93);
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 4px 0px rgba(19, 23, 61, 0.1);
+}
+.languages .col:hover {
+    border: 2px solid rgb(0, 122, 255);
+}
+
+.wrapper {
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 4px 0px rgba(19, 23, 61, 0.1);
+}
+.wrapper:hover{
+    border: 2px solid rgb(0, 122, 255);
+}
+.wrapper h1 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.wrapper  p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+
+
+
+.experience {
+    width:  95%;
+    margin: auto;
+}
+.experience h1 {
+    font-weight: 600;
+    text-align: center;
+    color: rgb(95, 93, 93);
+    margin-top: 30px;
+}
+
+.experience .col-md {
+    width: 95%;
+    margin:10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue !important;
+}
+.experience .col-md h1{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0px;
+}
+.experience .col-md p{
+    margin: 3px;
+}
+
+.contactMe{
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+.contactMe form p {
+    margin-left: auto;
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+}
+
+.contactMe form {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    text-align: right;
+    margin: auto;
+    border: 1px solid rgba(211, 211, 211, 0.493);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 0px rgba(19, 23, 61, 0.1);
+}
+.contact-form input {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+    height: 45px;
+    border: none;
+    background-color: rgba(230, 230, 230, 0.3);
+}
+textarea {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(230, 230, 230, 0.3);
+}
+
+#btn-submit {
+    -webkit-appearance: none;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(0, 122, 255) !important;
+}
+
+
+
+@media only screen and (max-width: 750px){ 
+    .cover h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    #coverImg{
+        width: 70% !important;
+    }
+    .cover a {
+       display: none;
+    }
+    .contactme-button {display: block;}
+    .mobile-button { display: block;}
+    .title {
+        text-align: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .two-columns {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .codingSkills {
+        margin: auto;
+        width: 95%;
+    }
+    .codingSkills img {
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .education img {
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .workExperience img {
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .contact-form {
+        margin-top: 30px!important;
+    }
+    .contact-form input {
+        width: 100%;
+    }
+    .contact-form textarea {
+        width: 100%;
+    }
+
+}

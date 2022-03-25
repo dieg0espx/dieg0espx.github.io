@@ -1,3 +1,15 @@
+<?php
+    if(isset($_REQUEST['submission'])) {
+        $name = $_REQUEST['name'];
+        $email = $_REQUEST['email'];
+        $phone = $_REQUEST['phone'];
+        $txt = $_REQUEST['message'];
+
+        $msg = " Name: " .$name. "\n Email: " . $email. "\n Message: " . $txt;
+
+        mail("espinosa9mx@gmail.com","New Message from portfolio ",$msg);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +64,7 @@
                       <a class="nav-link" href="#contactMe"> Contact Me </a>
                     </li>  
                     <li class="nav-item">
-                      <a class="nav-link" href="files/Resume-DiegoEspinosa.pdf"> Download Resume </a>
+                      <a class="nav-link" href="files/Resume-DiegoEspinosa.pdf"> Resume </a>
                     </li>  
                   </ul>
                 </div>
@@ -162,7 +174,7 @@
     <hr id="workExperience">
     <!-- WORK EXPERIENCE -->
     <div class="title"> <h1> Work Experience </h1></div>
-    <div class="workExperience" >
+    <div class="workExperience">
         <div class="two-columns">
             <div class="row">
                 <div class="col">
@@ -199,6 +211,10 @@
                        <h1> Email </h1>
                        <a href="mailto:espinosa9mx@gmail.com">espinosa9mx@gmail.com</a>
                    </div>
+                   <div class="wrapper">
+                        <h1> Phone </h1>
+                        <a href="tel:+16047808639"> +1 (604) 780 8639 </a>
+                    </div>
                     <div class="wrapper">
                         <h1> Phone </h1>
                         <a href="tel:+529999088639"> +52 (999) 908 8639</a>
@@ -216,11 +232,11 @@
                 <form class="contact-form" id="form" onsubmit="showConfirmation()">
                     <p> New Message </p>
                     <input type="hidden" name="submission">
-                    <input type="text" name="name" placeholder="Name / Company Name" disabled> 
-                    <input type="email" name="email" placeholder="Email" disabled>
-                    <input type="tel" name="phone" placeholder="Phone Number" disabled>
-                    <textarea name="message" rows="3" cols="50" placeholder="Message" disabled></textarea>
-                    <input id="btn-submit" type="submit" value="Submit" disabled>
+                    <input type="text" name="name" placeholder="Name / Company Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <textarea name="message" rows="3" cols="50" placeholder="Message"></textarea>
+                    <input id="btn-submit" type="submit" value="Submit">
                 </form>
                </div>
            </div>

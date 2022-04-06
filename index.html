@@ -19,6 +19,21 @@
         function showConfirmation() {
             alert("Message submitted successfully !");
         }
+        function ponerVariables(){
+            console.log("Hola Sergio");
+            var name = document.getElementById('name').value;
+            var mail = document.getElementById('mail').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+
+            var body = "Hello my name is " + name + " I would appreciate if you can contact me at " + mail + " or my cellphone " + phone;
+
+            var text = "mailto:espinosa9mx@gmail.com?subject=I'm interested in your resume&body=" + body + message;
+    
+            window.location.href = text;
+
+        }
+
     </script>
     <!-- MOBILE BUTTON -->
     <div class="mobile-button">
@@ -192,7 +207,9 @@
                <div class="col">
                     <div class="wrapper">
                        <h1> Email </h1>
-                       <a href="mailto:espinosa9mx@gmail.com"> espinosa9mx@gmail.com </a>
+                       <!-- <a href="mailto:espinosa9mx@gmail.com"> espinosa9mx@gmail.com </a> -->
+                       <a href="mailto:espinosa9mx@gmail.com?
+                       cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">Send mail with cc, bcc, subject and body</a>
                    </div>
                     <div class="wrapper">
                         <h1> Phone </h1>
@@ -215,11 +232,13 @@
                 <form class="contact-form" id="form" onsubmit="showConfirmation()">
                     <p> New Message </p>
                     <input type="hidden" name="submission">
-                    <input type="text" name="name" placeholder="Name / Company Name" disabled> 
-                    <input type="email" name="email" placeholder="Email" disabled>
-                    <input type="tel" name="phone" placeholder="Phone Number" disabled>
-                    <textarea name="message" rows="3" cols="50" placeholder="Message" disabled></textarea>
-                    <input id="btn-submit" type="submit" value="Submit" disabled>
+                    <input type="text" name="name" id="name" placeholder="Name / Company Name" > 
+                    <input type="email" name="email" id="mail" placeholder="Email" >
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number" >
+                    <textarea name="message" id="message" rows="3" cols="50" placeholder="Message" ></textarea>
+                    <!-- <input id="btn-submit" type="submit" value="Submit" > -->
+                    <a onclick="ponerVariables()">Send</a>
+                </div>
                 </form>
                </div>
            </div>
